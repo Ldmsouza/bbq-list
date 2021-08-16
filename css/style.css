@@ -5,8 +5,31 @@
 }
 
 html, body{
+    background-color:black;
 	height: 100%;  
 }
 
+.formContainer{
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#ffffffbb;
+    max-width: 300px;
+    font-family: arial, helvetica, sans;
+    text-align: center;
+}
 
+h1{
+    margin-bottom:10px;
+}
 
+input[type="number"]{
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    padding:8px;
+}
+
+button{
+    margin: 10px;
+    padding: 8px;
+}
