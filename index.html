@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon"
+        href="https://imagensemoldes.com.br/wp-content/uploads/2020/05/%C3%8Dcone-de-Churrasqueira-Churrasco-PNG-1-1024x1024.png"
+        type="image/x-icon">
     <title>Churrascometro</title>
 </head>
+
 <body>
-    <div class="formContainer">
-        <form>
-            <h1>Churrascômetro</h1>
-            <input id="adultos" type="number" placeholder="Adultos">
-            <input id="criancas" type="number" placeholder="Crianças">
-            <input id="horas" type="number" placeholder="Horas">
-            <button type="submit">Calcular</button>
-        </form>
-        
+
+    <div class="flex-box formContainer">
+
+        <h1>Churrascômetro</h1>
+        <input id="adultos" name="adultos" type="number" placeholder="Adultos" title="Insira a quantidade de adultos.">
+        <input id="criancas" name="criancas" type="number" placeholder="Crianças"
+            title="Insira a quantidade de crianças.">
+        <input id="duracao" name="duracao" type="number" placeholder="Duração (horas)"
+            title="Insira quanto tempo de churrasco pretende fazer.">
+        <button onclick="calcular()">Calcular</button>
+
+        <div id="resultado">
+
+        </div>
+        <!-- recebe conteúdo via js -->
+
     </div>
+
     <script src="./js/script.js"></script>
 </body>
+
 </html>

@@ -4,17 +4,24 @@
 	box-sizing: border-box;
 }
 
-html, body{
+body{
     background-color:black;
-	height: 100%;  
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: arial, helvetica, sans;
 }
 
+
+
 .formContainer{
-    margin: 0 auto;
+
     padding: 20px;
+    border-radius: 10px;
     background-color:#ffffffbb;
     max-width: 300px;
-    font-family: arial, helvetica, sans;
     text-align: center;
 }
 
@@ -24,12 +31,21 @@ h1{
 
 input[type="number"]{
     width: 100%;
+    border: 0;
     display: block;
     margin-bottom: 5px;
     padding:8px;
 }
 
+
+
 button{
-    margin: 10px;
+    margin-top: 20px;
     padding: 8px;
+    border: 0;
+}
+
+#resultado{
+    margin-top: 10px;
+    text-align: left;
 }
